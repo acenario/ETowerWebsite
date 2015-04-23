@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- Stop Looking At My Source Code -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ETower | Building the Next Generation of Entrepreneurs</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/rest.css">
+		<link rel="stylesheet" href="http://arjunb.com/icons2/style.css">
+		<link rel="stylesheet" href="css/strip.css">
+		<link rel="stylesheet" href="css/tipped.css">
+		<link rel="stylesheet" href="css/fixed-nav.css">
+		<link rel="stylesheet" href="css/loader.css">
+
+		<!-- Bootstrap CSS -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Modernizr link js -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<script language="javascript" type="text/javascript">
+		var one_day=1000*60*60*24
+		var one_month=1000*60*60*24*30
+		var one_year=1000*60*60*24*30*12
+
+		function displayage(yr, mon, day, unit, decimal, round){
+		today=new Date()
+		var pastdate=new Date(yr, mon-1, day)
+
+		var countunit=unit
+		var decimals=decimal
+		var rounding=round
+
+		finalunit=(countunit=="days")? one_day : (countunit=="months")? one_month : one_year
+		decimals=(decimals<=0)? 1 : decimals*10
+
+		if (unit!="years"){
+		if (rounding=="rounddown")
+		document.write(Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+		else
+		document.write(Math.ceil((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+		}
+		else{
+		yearspast=today.getFullYear()-yr-1
+		tail=(today.getMonth()>mon-1 || today.getMonth()==mon-1 && today.getDate()>=day)? 1 : 0
+		pastdate.setFullYear(today.getFullYear())
+		pastdate2=new Date(today.getFullYear()-1, mon-1, day)
+		tail=(tail==1)? tail+Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals : Math.floor((today.getTime()-pastdate2.getTime())/(finalunit)*decimals)/decimals
+		document.write(yearspast+tail+" "+countunit)
+		}
+		}
+
+		function displaycdownnumber(yr, mon, day, unit, decimal, round){
+		today=new Date()
+		var pastdate=new Date(yr, mon-1, day)
+
+		var countunit=unit
+		var decimals=decimal
+		var rounding=round
+
+		finalunit=(countunit=="days")? one_day : (countunit=="months")? one_month : one_year
+		decimals=(decimals<=0)? 1 : decimals*10
+
+		if (unit!="years"){
+		if (rounding=="rounddown")
+		document.write(Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+		else
+		document.write(Math.ceil((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+		}
+		else{
+		yearspast=today.getFullYear()-yr-1
+		tail=(today.getMonth()>mon-1 || today.getMonth()==mon-1 && today.getDate()>=day)? 1 : 0
+		pastdate.setFullYear(today.getFullYear())
+		pastdate2=new Date(today.getFullYear()-1, mon-1, day)
+		tail=(tail==1)? tail+Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals : Math.floor((today.getTime()-pastdate2.getTime())/(finalunit)*decimals)/decimals
+		document.write(yearspast+tail)
+		}
+		}
+
+		function getYear()
+		{
+		var d = new Date();
+		var year = d.getFullYear();
+		document.write(year)
+		}
+
+		</script>
+
+	</head>
+	<body>
+
+	<!-- LOADING BEGIN -->
+
+		<div id="loader-wrapper">
+            <div class="spinner">
+			  <div class="bounce1"></div>
+			  <div class="bounce2"></div>
+			  <div class="bounce3"></div>
+			</div>
+        </div>
+
+
+		<div id="wrapper">
+			<header id="header">
+
+						<nav class="header">
+							<div class="container">
+								<div class="row">
+							<p id="logo"><a href="#">logo</a></p>
+								<ul class="main-nav">
+									<li><a href="#mission">mission</a></li>
+									<li><a href="#about">about</a></li>
+									<li><a href="#services">companies</a></li>
+									<li><a href="#contact">contact</a></li>
+								</ul>
+
+								<div class="menu-button"></div>
+								<nav class="mobile-nav">
+									<ul class="flexnav one-page" data-breakpoint="798">
+										<li><a href="#about">about</a></li>
+										<li><a href="#services">background</a></li>
+										<li><a href="#portfolio">portfolio</a></li>
+										<li><a href="#contact">contact</a></li>
+									</ul>
+								</nav>
+
+								</div>
+							</div><!-- container -->
+						</nav><!-- end nav -->
+
+
+
+						<section id="content">
+							<!-- PHOTO BY <a href="http://kylerross.com" target="_blank">KYLER ROSS</a>. -->
+							<div class="container">
+								<div class="row text-center col-sm-8 col-sm-offset-2">
+									<h1 class="typewrite" data-period="2000" data-type='[ "We are dreamers", "students", "entrepreneurs." ]'>
+   										 <span class="wrap"></span>
+    								</h1>
+									<p>21 entrepreneurs | ∞ possibilities.</p>
+									<!--<a href="#portfolio">DISCOVER US</a>-->
+								</div>
+							</div>
+						</section>
+
+
+			</header><!-- header -->
+
+			
+
+			<article id="mission" class="light section">
+				<div class="container">
+
+					<div class="row text-center" data-scroll-reveal="enter from top and move 100px over 900ms">
+						<h1>We create...</h1>
+						<!--<p>I've worked in numerous fields ranging from art design to prosthetics. Feel free to view my portfolio here or on <a href="http://linkedin.arjunb.com" target="_blank"><span class="high-light simple-tooltip" title="Connect with me!">LinkedIn</span></a>.</p>-->
+					</div>
+
+					<div class="col-sm-4" data-scroll-reveal="enter from bottom 30px and wait 300ms fade">
+						<div class="Fservices text-center">
+							<h2>Opportunities</h2>
+							<span><i class="icon-lightbulb"></i></span>
+							<p>We strive to provide resources for entrepreneurs, including networking conferences, speaker series, and mentorship.</p>
+						</div>
+					</div>
+
+					<div class="col-sm-4" data-scroll-reveal="enter from bottom 30px  and wait 500ms fade">
+						<div class="Fservices text-center">
+							<h2>Companies</h2>
+							<span><i class="icon-tools"></i></span>
+							<p>We launch and grow student ventures. Our ventures are in Y-Combinator, Techstars, and have raised millions in Venture Capital.</p>
+						</div>
+					</div>
+
+					<div class="col-sm-4" data-scroll-reveal="enter from bottom 30px  and wait 700ms fade">
+						<div class="Fservices text-center">
+							<h2>Communities</h2>
+							<span><i class="icon-globe"></i></span>
+							<p>We unite student entrepreneurs of all kind to create an innovative environment and foster lasting relationships.</p>
+						</div>
+					</div>
+
+					<!--<div class="col-sm-3" data-scroll-reveal="enter from bottom 30px  and wait 700ms fade">
+						<div class="Fservices text-center">
+							<h2>Business and Innovation</h2>
+							<span><i class="icon-profile-male"></i></span>
+							<p>I am an entrepreneur at Babson, have worked in businesses (some as management), and am in the middle of starting <a href="http://heyheadsup.com" target="_blank"><span class="high-light simple-tooltip" title="Hey! HeadsUp">my own</span></a>.</p>
+						</div>
+					</div>-->
+
+				</div>
+			</article><!-- end of servives section -->
+            
+            <article id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="desc">
+								<h1 data-scroll-reveal="enter from left and move 100px over 700ms">Our History</h1>
+								<p data-scroll-reveal="wait 0.5s enter from left and fade">&nbsp; &nbsp; &nbsp; &nbsp; E-Tower was founded in 2001 by Andrew Foley, a founder of IdeaPaint, to bring together the best young entrepreneurs to one living space at Babson College. Babson College is renowned as the #1 undergraduate school for entrepreneurship for over 15 years.<br />
+&nbsp; &nbsp; &nbsp; &nbsp;Through its development, it became a highly valued space for the rest of Babson’s campus. Speaker events would have students from the rest of campus filling up the common lounge and lining up at the doors. Many residents have started companies that have grew to raising multi-million sales revenue and have been featured in Bloomberg Businessweek, TechCrunch, and other notable news sources.<br />
+&nbsp; &nbsp; &nbsp; &nbsp;Unfortunately, E-Tower was removed from campus during the academic year of 2012-2013, but was brought back by those who believed in its cause. We went through a period of reflection and set a new improved vision for the organization and returned to campus in the original space at the start of Babson’s Fall 2013 semester.
+								</p>
+
+							</div>
+
+							<!--<div class="row">
+								<div class="col-sm-8" data-scroll-reveal="enter from bottom over .5s and fade">
+									<div class="perc">
+										<span class="num"><script>
+												displaycdownnumber(2007, 05, 21, "years", 0, "rounddown")</script> <span>years</span></span>
+										<small>Web, Software, Server, Network, Hosting, Data Modeling, Business Logic, API/MVC, UI, Graphics Design, Management</small>
+
+									</div>
+								</div>
+								
+							</div>-->
+
+						</div>
+
+						<div class="col-sm-6">
+							<img src="img/history-2.jpg" class="img-responsive" alt="model" data-scroll-reveal="enter from right wait .7s and fade">
+						</div>
+                        <div class="container">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </div>
+					</div>
+				</div>
+			</article><!-- end of About section -->
+            
+            <article id="services" class="light section">
+				<div class="container">
+
+					<div class="row text-center" data-scroll-reveal="enter from top and move 100px over 900ms">
+						<h1>Our Alumni</h1>
+						<!--<p>I've worked in numerous fields ranging from art design to prosthetics. Feel free to view my portfolio here or on <a href="http://linkedin.arjunb.com" target="_blank"><span class="high-light simple-tooltip" title="Connect with me!">LinkedIn</span></a>.</p>-->
+					</div>
+
+					<!--<div class="col-sm-12" data-scroll-reveal="enter from bottom 30px and wait 300ms fade">-->
+                        <div class="row text-center" data-scroll-reveal="enter from top and move 100px over 900ms">
+						<div class="Fservices text-center">
+							<!--<h2>Opportunities</h2>
+							<span><i class="icon-lightbulb"></i></span>-->
+                            <div align="center"><img src="img/companies2.png" class="img-responsive" alt="alumni" align="middle" data-scroll-reveal="enter from bottom 30px and wait 300ms fade"></div>
+						</div>
+					</div>
+				</div>
+                <br />
+                <br />
+                <br />
+                <br />
+			</article><!-- end of servives section -->
+
+			<article id="portfolio">
+				<div class="container">
+					<div class="row ">
+						<h1>E-Tower Press</h1>
+						<p class="text-left">Recent news highlights of E-Tower members and ventures.</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="img-holder">
+								<a href="http://www.inc.com/zoe-henry/2015-30-under-30-naturebox.html?fb_ref=Default" target="_blank">
+									<div class="overlay-layer">
+										<div>
+											<small>Featured in Forebe's 30 under 30</small>
+											<h2>Naturebox &amp; ThinkLite</h2>
+										</div>
+									</div>
+									<img src="img/naturebox2.jpg" alt="naturebox">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="img-holder">
+								<a href="http://techcrunch.com/2015/03/16/onboardiq-simplifies-hiring-for-on-demand-startups/" target="_blank">
+									<div class="overlay-layer">
+										<div>
+											<small>Featured on TechCrunch</small>
+											<h2>OnboardIQ</h2>
+										</div>
+									</div>
+									<img src="img/onboard.jpg" alt="onboardiq">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="img-holder">
+								<a href="http://bostinno.streetwise.co/2014/12/10/babson-startup-students-launch-calendar-app-hey-heads-up/">
+									<div class="overlay-layer">
+										<div>
+											<small>Featured on CNBC &amp; BostInno</small>
+											<h2>Hey! HeadsUp</h2>
+										</div>
+									</div>
+									<img src="img/headsup-vert-banner.jpg" alt="hey headsup">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="img-holder">
+								<a href="http://bostinno.streetwise.co/2014/12/05/rapkey-texting-app-that-turns-text-message-into-rap-lyrics-2/" target="_blank">
+									<div class="overlay-layer">
+										<div>
+											<small>Featured in BostInno</small>
+											<h2>RapKey</h2>
+										</div>
+									</div>
+									<img src="img/rapkey-whatever.jpg" alt="rapkey">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="img-holder">
+								<a href="http://techcrunch.com/2013/02/14/yc-backed-virool-raises-6-62-million-seed-round-to-help-make-videos-go-viral/" target="_blank">
+									<div class="overlay-layer">
+										<div>
+											<small>Featured in TechCrunch</small>
+											<h2>Virool</h2>
+										</div>
+									</div>
+									<img src="img/virool.jpg" alt="virool">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article><!-- end of portfolio section -->
+
+			<article id="contact" class="light">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div>
+							<p>Get in touch:</p>
+							<p>etowerbabson (at) gmail.com</p>
+							</div>
+							<aside>
+								<ul>
+									<li><a href="https://www.facebook.com/BabsonETower?fref=ts
+E-Tower" target="_blank"><i class="icon-facebook"></i></a></li>
+									<li><a href="https://twitter.com/babsonetower" target="_blank"><i class="icon-twitter"></i></a></li>
+								</ul>
+							</aside>
+						</div>
+						<div class="col-sm-8">
+							<div>
+								<h1>Work with us</h1>
+								<p>If you have a project or event in mind that you would like to work on with us, shoot us an email at: etowerbabson (at) gmail.com or <a href="https://twitter.com/babsonetower" target="_blank"><span class="high-light simple-tooltip" title="Follow us!">tweet at us.</span></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article><!-- end of contact section -->
+
+			<section id="subfooter">
+				<div class="container">
+					<div class="row">
+                        <p><strong>©<script>getYear()</script> E-TOWER</strong> WEBSITE DESIGN BY <a href="http://arjunb.com" target="_blank">ARJUN BHATNAGAR</a></p>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Javascript  -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="http://developer.hawkface.com/ringside/affluence-select/html/js/classie.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="js/strip.pkgd.min.js"></script>
+		<!--<script src="js/t.min.js"></script>-->
+		<script src="js/prefix.js"></script>
+		<script src="js/tipped.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/jquery.flexnav.min.js"></script>
+		<script src="js/scrollReveal.js"></script>
+
+		<script src="js/custom.js"></script>
+	</body>
+</html>
