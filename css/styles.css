@@ -86,11 +86,14 @@ header#header {
     header#header nav.header #logo a {
       text-indent: -9999px;
       display: block;
-      background-image: url(../img/arjunb2.png);
-      width: 253px; /* 126px, 253 */
-      height: 28px; /* 77px,28 */
+      background-image: url(../img/etower-logo-mini.png);
+      /*width: 253px;*/ /* 126px, 253 */
+      width: 146px;
+      /* height: 28px;*/  /* 77px,28 */
+      height: 51px; 
       float: left;
-      margin-top: 20px;
+      /* margin-top: 20px; */
+      margin-top: 4px;
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
       transition: all .2s ease; }
